@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensures the body takes the full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.main-content {
+    margin-bottom: 50px; /* Reserve space for the footer */
+}
+
+header {
+    margin-top: 20px;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2F2175;
+}
+
+.header-text h2 {
+    font-size: 36px;
+    font-style: italic;
+    color: #7265D8;
+    margin-top: -10px;
+    font-family: 'Comic'!important;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items from the top */
+    gap: 50px;
+    margin-top: 40px;
+    color: #7265D8;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px; /* Increase width */
+    height: auto; /* Let the height adjust automatically */
+    color: #7265D8;
+}
+
+.circle img {
+    width: 350px; /* Match the size of the container */
+    height: 350px; /* Maintain the image aspect ratio */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn-container {
+    margin-top: 20px; /* Space between image and button */
+    
+}
+
+.btn {
+    text-decoration: none;
+    color: #7265D8 !important;
+    background-color: white;
+    font-size: 40px !important;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-family: 'Holiday';
+   
+}
+
+.btn:hover {
+    background-color: #2F2175;
+    color: white;
+}
+
+.ab-btn-container {
+    margin-top: 20px; /* Space between image and button */
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.ab-btn {
+    text-decoration: none;
+    color: #7265D8 !important;
+    background-color: white;
+    font-size: 20px !important;
+    font-weight: bold;
+    padding: 0px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-family: 'Holiday';
+    text-align: left;
+    justify-content: left;
+   
+}
+
+.ab-btn:hover {
+    background-color: #2F2175;
+    color: white;
+}
+
+
+
+.blue-banner {
+    background-color: #2F2175; /* Dark blue color */
+    height: 200px; /* Height of the banner */
+    width: 100vw; /* Stretch the full width of the screen */
+    position: absolute;
+    top: 50%; /* Center the banner vertically based on content */
+    transform: translateY(-50%);
+    z-index: -1; /* Place the banner behind the content */
+}
+
+.image-container {
+    padding: 50px 0px 0px 0px;
+}
+
+@font-face {
+    font-family: 'Holiday';
+    src: url('Fonts/HolidayFree.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlin';
+    src: url('Fonts/berlin.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('Fonts/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comic';
+    src: url('Fonts/comic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: left;
+    color: #2F2175;
+    background-color: white;
+    height: 25px; /* Fixed height for footer */
+    position: relative; /* Ensures footer stays at the bottom */
+    }
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: left;
+}
+
+.p1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: left;
+    font-weight:900;
+}
+.p2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    font-weight:900;
+    margin-top: 30px;
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Space between the two images */
+    align-items: center;
+    width: 100%; /* Full width of the viewport */
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.left-image {
+    height: 150px; /* Adjust the height */
+    margin-left: auto; /* Auto margin to push it towards the center */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the left image */
+    margin-bottom: 100px;
+    margin-top: -20px;
+}
+
+.right-link {
+    text-decoration: none; /* No underline or other decoration */
+}
+
+.right-image {
+    height: 100px; /* Adjust size for the right image */
+    margin-right: 30px; /* No extra margin */
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Style for the image container */
+.image-container {
+    margin-bottom: 20px; /* Space below the image */
+}
+
+/* Accordion wrapper styles */
+.accordion-wrapper {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    min-height: 100vh; /* Full viewport height for vertical centering */
+}
+
+/* Accordion styles */
+.accordion {
+    width: 100%; /* Adjust width as needed */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Accordion header styles */
+.accordion-header {
+    background-color: white; /* Light gray background */
+    padding: 15px; /* Add padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove borders */
+    font-family: 'Berlin'!important;
+    font-size: 30px !important;
+    color: #2F2175;
+}
+
+/* Accordion content styles */
+.accordion-content {
+    padding: 15px; /* Add padding */
+    border-top: 1px solid white; /* Border above content */
+    display: none; /* Hide by default */
+}
+
+/* Show content on accordion toggle */
+.accordion-content.active {
+    display: block; /* Show content when active */
+}
+
+/* Hover effect for headers */
+.accordion-header:hover {
+    background-color: #d3d3d3; /* Change background on hover */
+}
+
+a {
+    color:#2F2175;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.img-theory {
+    max-width: 100vh;
+}
+
+
+.yt_container {justify-content: left; align-items: left; margin: 50px 50px 50px 50px;  border-radius: 16px; position: relative; padding: 0px; /* Ensure the message is positioned within this container */ display: inline-block; /* Keep the container size according to its content */ text-align: left;}
+.yt_container .yt_link {text-decoration: none; border: white;}
+.yt_container .yt_image { text-align: left; opacity: 100; /* Hide the image initially */ transition: opacity 0.5s ease; /* Smooth transition for image opacity */width: 400px; height: auto;}
+.yt_container:hover .yt_image {opacity: 1;}
+.yt_container .yt_message { opacity: 1; /* Initially show the message */ position: absolute; /* Position the message relative to the container */ top: 15%; /* Center the message vertically */left: 50%; /* Center the message horizontally */transform: translate(-50%, -50%); /* Perfectly center the message */color: white; /* Message text color */transition: opacity 0.5s ease; /* Smooth transition for message opacity */
+    /* New properties */ font-size: 30px; /* Adjust the font size */ font-family: 'Courier New', Courier, monospace; /* Change the font type */ text-align: center; /* Center-align the text inside the message box */}
+
+.bum_navs { padding-top: 0px; text-align: left;}
+.bum_navs a {   text-decoration: none;
+    color: #7265D8 !important;
+    background-color: white;
+    font-size: 20px !important;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-family: 'Holiday';
+    border-radius: 16px;
+}
+.bum_navs a:hover {background-color: #2F2175; border: solid; border-radius: 16px; border-color: white;/* Change background color on hover */color: #38b6ff; /* Change text color on hover */transform: translateX(10px); /* Slightly enlarge the button on hover */}
+
+
+.me {
+    border-radius: 50%;
+    height: 500px
+}
+
+.code-image {
+    height: 600px;
+    width: 600px;
+}
+
+.code-image-long {
+    height: 600px;
+    width: 1000px;
+}
+
+.code-image-scratch {
+    height: 450px;
+    width: 350px;
+}
