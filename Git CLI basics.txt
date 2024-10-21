@@ -1,0 +1,33 @@
+                     
+git status                              
+git add .                    
+git commit -m "Updated portfolio with new projects"
+git remote add origin https://github.com/Stavin74/My-Portfolio.git
+git push -u origin master
+
+
+git status
+git add .
+git commit -m "All Portfolio files"
+git push origin master
+
+
+git checkout -b update-homepagehtmlimage-to-url
+git add .
+git commit -m "Updating the html to URL behind the image to direct to homepage on new hosted web address"
+git push origin update-homepagehtmlimage-to-url
+
+git checkout -b update-changeItoi1
+git add .
+git commit -m "Change i to I in html files for index.html"
+git push origin update-changeItoi1
+
+
+git add code.html
+git commit -m "Meme Intro"
+git push origin update-changeItoi1
+
+git checkout -b update-changeItoi2
+git add .
+git commit -m "Meme Intro"
+git push origin update-changeItoi2

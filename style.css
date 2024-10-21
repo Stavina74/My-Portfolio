@@ -14,7 +14,6 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    
 }
 
 .main-content {
@@ -88,34 +87,27 @@ header {
     color: white;
 }
 
-.ab-btn-container {
-    margin-top: 20px; /* Space between image and button */
-    display: flex;
-    justify-content: flex-start;
-    
-}
+
 .ab-btn {
     text-decoration: none;
     color: #7265D8 !important;
-    background-color: white;
+    background-color: #2F2175;
     font-size: 20px !important;
     font-weight: bold;
-    padding: 0px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     display: inline-block;
     transition: background-color 0.3s ease;
     font-family: 'Holiday';
-    text-align: left;
-    justify-content: left;
+    text-align: center;
+    justify-content: center;
    
 }
 
 .ab-btn:hover {
-    background-color: #2F2175;
-    color: white;
+    background-color: white;
+    color: #2F2175;
 }
-
-
 
 .blue-banner {
     background-color: #2F2175; /* Dark blue color */
@@ -169,6 +161,8 @@ footer {
     background-color: white;
     height: 25px; /* Fixed height for footer */
     position: relative; /* Ensures footer stays at the bottom */
+    height: 100vh;
+    margin-top: 50px;
     }
 
 p {
@@ -209,6 +203,15 @@ p {
     transform: translateX(-50%); /* Center the left image */
     margin-bottom: 100px;
     margin-top: -20px;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.left-image:hover {
+    transform: translateX(-50%) scale(1.1); /* Scale and keep it centered */
+    text-align: center;
+   
+
 }
 
 .right-link {
@@ -325,3 +328,104 @@ a {
     height: 450px;
     width: 350px;
 }
+
+.bg-image {
+background-image: url('bg1.svg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100vw; /* Stretch the full width of the screen */
+height: 100vh;
+position: absolute;
+top: 50%; /* Center the banner vertically based on content */
+transform: translateY(-50%);
+z-index: -1; /* Place the banner behind the content */
+transition: transform 0.3s ease-in-out;
+}
+
+.bg-image img:hover {
+    transform: scale(1.2);
+}
+
+
+.image-container-index {
+    padding: 50px 100px 0px 0px;
+    margin-left: 300px;
+}
+
+.left-image-index {
+    height: 250px; /* Adjust the height */
+    margin-left: auto; /* Auto margin to push it towards the center */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Center the left image */
+    margin-top: -30px;
+    margin-left: 200px;
+   
+
+}
+.btn-container-index {
+    margin-top: 350px;
+    margin-left: 1165px;
+    
+}
+
+.btn-homepage {
+    text-decoration: none;
+    color: #7265D8 !important;
+    background-color: #2F2175;
+    font-size: 20px !important;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-family: 'Holiday';
+   
+}
+
+.btn-homepage:hover {
+    background-color: white;
+    color: #2F2175;
+}
+
+.bg-image-banner {
+    background-image: url('bg.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100vw; /* Stretch the full width of the screen */
+height: 50vh;
+position: absolute;
+top: 50%; /* Center the banner vertically based on content */
+transform: translateY(-50%);
+z-index: -1; /* Place the banner behind the content */
+}
+
+
+.banner-container {
+    width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+        color: black;
+        height: 200px;
+    }
+    
+    
+    .banner-content {
+        display: inline-block;
+        padding-left: 100%; /* Start the banner off-screen */
+        animation: rollBanner 8s linear infinite;
+        font-size: 70px; /* Adjust size as needed */
+        font-family: 'Freestyle Script Regular', 'Freestyle Script';
+    }
+
+    .cstbc {
+        height: 200px;
+        width: auto;
+    }
